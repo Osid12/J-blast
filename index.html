@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J-Blast | Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#social-media">Social Media</a></li>
-                <li><a href="#products">Our Products</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">J-Blast</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.facebook.com/profile.php?id=100048961072822" target="_blank">Facebook</a>
+    </nav>
+  </header>
 
-    <section id="social-media">
-        <h2>Follow Us on Social Media</h2>
-        <ul>
-            <li><a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a></li>
-            <li><a href="https://twitter.com/yourprofile" target="_blank">Twitter</a></li>
-        </ul>
-    </section>
+  <!-- Banner Section -->
+  <section id="home">
+    <div class="banner">
+      <h1>Welcome to J-Blast</h1>
+      <p>Your trusted online shop</p>
+    </div>
+  </section>
 
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product">
-            <h3>Product 1</h3>
-            <p>This is a great product.</p>
-        </div>
-        <div class="product">
-            <h3>Product 2</h3>
-            <p>This is another amazing product.</p>
-        </div>
-    </section>
+  <!-- Categories Section -->
+  <section id="categories">
+    <h2>Shop by Categories</h2>
+    <div class="categories-grid">
+      <div class="category">Electronics</div>
+      <div class="category">Fashion</div>
+      <div class="category">Home & Living</div>
+      <div class="category">Health & Beauty</div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Your Website</p>
-    </footer>
+  <!-- Product Upload Section -->
+  <section id="shop">
+    <h2>Upload Your Product</h2>
+    <form id="product-form">
+      <input type="text" placeholder="Product Name" id="name" required />
+      <input type="number" placeholder="Price" id="price" required />
+      <input type="text" placeholder="Category" id="category" required />
+      <input type="text" placeholder="Location" id="location" required />
+      <textarea placeholder="Description" id="description" required></textarea>
+      <input type="file" id="image" accept="image/*" required />
+      <button type="submit">Upload Product</button>
+    </form>
+    <div id="product-list"></div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact / Support</h2>
+    <p>Phone: 09049266436</p>
+  </section>
 </body>
 </html>

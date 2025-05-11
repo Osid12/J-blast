@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>J-Blast | Home</title>
+  <title>J-Blast | Shop</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
@@ -21,43 +21,68 @@
   </header>
 
   <!-- Banner Section -->
-  <section id="home">
-    <div class="banner">
+  <section id="home" class="banner">
+    <div class="banner-content">
       <h1>Welcome to J-Blast</h1>
-      <p>Your trusted online shop</p>
+      <p>Your trusted online shopping platform</p>
+      <a href="#shop" class="shop-now">Shop Now</a>
     </div>
   </section>
 
   <!-- Categories Section -->
-  <section id="categories">
+  <section id="categories" class="categories">
     <h2>Shop by Categories</h2>
-    <div class="categories-grid">
-      <div class="category">Electronics</div>
-      <div class="category">Fashion</div>
-      <div class="category">Home & Living</div>
-      <div class="category">Health & Beauty</div>
+    <div class="category-grid">
+      <div class="category">
+        <img src="electronics.jpg" alt="Electronics" />
+        <p>Electronics</p>
+      </div>
+      <div class="category">
+        <img src="fashion.jpg" alt="Fashion" />
+        <p>Fashion</p>
+      </div>
+      <div class="category">
+        <img src="home-living.jpg" alt="Home & Living" />
+        <p>Home & Living</p>
+      </div>
+      <div class="category">
+        <img src="beauty.jpg" alt="Health & Beauty" />
+        <p>Health & Beauty</p>
+      </div>
     </div>
   </section>
 
-  <!-- Product Upload Section -->
-  <section id="shop">
-    <h2>Upload Your Product</h2>
-    <form id="product-form">
-      <input type="text" placeholder="Product Name" id="name" required />
-      <input type="number" placeholder="Price" id="price" required />
-      <input type="text" placeholder="Category" id="category" required />
-      <input type="text" placeholder="Location" id="location" required />
-      <textarea placeholder="Description" id="description" required></textarea>
-      <input type="file" id="image" accept="image/*" required />
-      <button type="submit">Upload Product</button>
-    </form>
-    <div id="product-list"></div>
+  <!-- Featured Products Section -->
+  <section id="shop" class="shop">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="product1.jpg" alt="Product 1" />
+        <h3>Product Name 1</h3>
+        <p class="price">₦5000</p>
+        <p class="product-description">Product description goes here</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="product2.jpg" alt="Product 2" />
+        <h3>Product Name 2</h3>
+        <p class="price">₦7000</p>
+        <p class="product-description">Product description goes here</p>
+        <button>Add to Cart</button>
+      </div>
+      <!-- Add more product cards here -->
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="contact">
     <h2>Contact / Support</h2>
     <p>Phone: 09049266436</p>
   </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 J-Blast. All rights reserved.</p>
+  </footer>
 </body>
 </html>
